@@ -1,0 +1,12 @@
+# See http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+spring:
+  thymeleaf.cache: false
+  main.show-banner: false
+logging:
+    level:
+        org.springframework.web: DEBUG
+oandafx:
+  domain: https://stream-fxtrade.oanda.com
+  instruments: EUR_USD,USD_JPY,EUR_JPY
+  account_id: XXX
+  access_token: XXX

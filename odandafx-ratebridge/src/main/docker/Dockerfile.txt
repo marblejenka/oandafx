@@ -1,0 +1,6 @@
+FROM dockerfile/java:oracle-java8
+
+ADD odandafx-ratebridge.jar /opt/odandafx-ratebridge/
+EXPOSE 8080
+WORKDIR /opt/odandafx-ratebridge/
+CMD ["java", "-Xms512m", "-Xmx1g", "-jar", "odandafx-ratebridge.jar"]
